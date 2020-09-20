@@ -10,4 +10,4 @@
 
 > Since prices can be different at different retailers and even different locations at the same retailer we need to seperate price from the item level. For simplicity in the example I created a stores table that is that contains a retailer id and a name. In reality we would need to have a store_locations table as well so we could have different prices at each location vs. each retailer. Then we need to make a store_item_settings table that connects an item_id with a store_id that can have variations of price and availability. We would need to make sure there is no duplication of item_id and store_id in the table so we don't have duplicate data. 
 
-![Diagram of Schema Relationships]
+![Diagram of Schema Relationships](https://github.com/Smwest87/ETLTest/blob/master/question_1/Screen%20Shot%202020-09-20%20at%2011.19.27%20AM.png?raw=true)
