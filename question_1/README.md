@@ -3,7 +3,8 @@
 
 ## Question ##
 
-- Suppose you were redesigning the model for these tables. Let's say that we were expanding and nowneed to support variations in pricing and availability across locations. For example:item 1 at store 1 is $2.99item 1 at store 2 is $2.50If we were to simply add a store_location column to the items table, we would end up duplicating alot of data. This could cause issues when scaling. Similarly, the orders table has a lot of duplicateddata.We're looking more for discussion and diagrams for this question and not necessarily SQL
+
+1. Suppose you were redesigning the model for these tables. Let's say that we were expanding and nowneed to support variations in pricing and availability across locations. For example:item 1 at store 1 is $2.99item 1 at store 2 is $2.50If we were to simply add a store_location column to the items table, we would end up duplicating alot of data. This could cause issues when scaling. Similarly, the orders table has a lot of duplicateddata.We're looking more for discussion and diagrams for this question and not necessarily SQL
 
 
 ## Answer ##
