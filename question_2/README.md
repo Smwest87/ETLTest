@@ -26,6 +26,48 @@ WITH base_data AS (SELECT
 SELECT * FROM base_data;
 ```
 
+```
+for index, row in df.iterrows():
+    query = """
+        SELECT category_id, parent_category_id FROM test.categories
+        WHERE category_id = {row['terminal_category_id]}
+        """
+        ..... execute above query.... return result df
+
+    if result.parent_category_id == NONE:
+        insert_statement = """
+        INSERT INTO product_categorizations
+        (product_id, category_id)
+        VALUES(row['product_id], row['category_id]);
+        """
+
+        ...... execute insert_statment.....
+
+        continue
+    else:
+        insert_statement = """
+        INSERT INTO product_categorizations
+        (product_id, category_id)
+        VALUES(row['product_id], row['category_id]);
+        """
+
+        ..... execute insert_statement .....
+
+        ...execute query again, but replace row['terminal_category_id`] with result['parent_category_id'].....
+
+        insert_statment = """
+        INSERT INTO product_categorizations 
+        (product_id, category_id)
+        VALUES
+        (row['product_id'], result['category_id]),
+        (row['product_id']), result['parent_id']();
+
+        ..... execute final insert for category_id, iterate through dataframe....
+
+
+
+```
+
 
 3. One of the products ("Organic Apples") doesn't have a category mapping. Without a mapping, the item won't appear in the Shipt catalog. How would you solve this problem, knowing that new product categories regularly appear in the pipeline without warning? We're looking more for discussion and diagrams for these questions and not necessarily blocks of SQL.
 
