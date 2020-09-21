@@ -72,4 +72,4 @@ for index, row in df.iterrows():
 3. One of the products ("Organic Apples") doesn't have a category mapping. Without a mapping, the item won't appear in the Shipt catalog. How would you solve this problem, knowing that new product categories regularly appear in the pipeline without warning? We're looking more for discussion and diagrams for these questions and not necessarily blocks of SQL.
 
 ### Answer ###
->
+> A little out of my knowledge here but I would try and set up a repo to predict where products should be categorized based off what our catalog team has already performed. Find data that they say is pristine (Golden Products is a good example) and then perform matching on incoming products to existing products. If the match is above 75% we can feel pretty confident that it belongs in that category, just higher up in the taxonomy. Maybe place in parent, child vs going to the most terminal possible. 
