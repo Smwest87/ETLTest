@@ -18,12 +18,11 @@ For these questions, we will be using the Marvel Developer APIs. You will need t
 
 3. Create a CharacterFinder class that can accept the input/argument of a primary character (ex -Carnage) and will use the /v1/public/characters/{characterId} endpoint to populate all of their details and comics. The Marvel Universe often has many variations of each character so use exact text matching.
 
-### Done sort of ###
-
+### Done -- built into the answers for 4 and 5 ###
 
 4. Build a new method of CharacterFinder that can take another secondary character's name and return the list of comics that both characters are in.
 
-
+### Done ###
 
 
 5. Instantiate one object of your CharacterFinder class using the characters Storm and Emma Frost(ordering does not matter). Use this object's method developed in Question 4 above. How many comics do these two characters appear together in?
