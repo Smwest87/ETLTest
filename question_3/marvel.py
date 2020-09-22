@@ -176,7 +176,8 @@ class CharacterFinder:
         share_comics = {
             'primary': args.primary, 
             'secondary': args.secondary,
-            'share_ids': shared_ids
+            'share_ids': shared_ids,
+            'number_of_comics': len(shared_ids)
         }
 
         return share_comics
