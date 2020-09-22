@@ -5,6 +5,8 @@ I've broken each of the individual parts into their respective folder with SQL f
 
 ## To Run Python File ##
 
+Add MARVEL_PUBLIC_KEY and MARVEL_PRIVATE_KEY to your bash profile. Keys can be acquired from the Marvel Developer Website
+
 
 ``` 
 Pipenv Install --dev
